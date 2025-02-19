@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App - Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header -->
+    <nav class="bg-blue-600 p-4 text-white">
+        <div class="container mx-auto flex justify-between">
+            <a href="/" class="text-xl font-bold">Chat App</a>
+            <div>
+                <% if (user) { %>
+                    <a href="/profile" class="px-4">Profile</a>
+                    <a href="/auth/logout" class="px-4">Logout</a>
+                <% } else { %>
+                    <a href="/auth/login" class="px-4">Login</a>
+                    <a href="/auth/register" class="px-4">Register</a>
+                <% } %>
+                
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mx-auto p-8 text-center">
+        <h2 class="text-4xl font-bold mb-4">Welcome to Chat App</h2>
+        <p class="text-lg text-gray-700">Connect and chat with your friends in real time.</p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center py-3">
+        <p>&copy; 2025 Chat App. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

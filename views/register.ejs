@@ -1,0 +1,12 @@
+<%- include('partials/header') %>
+<div class="flex justify-center items-center h-screen">
+    <form action="/auth/register" method="POST" class="bg-white shadow-md rounded p-6 w-96">
+        <h2 class="text-2xl font-bold mb-4">Register</h2>
+        <input type="text" name="username" placeholder="Username" class="w-full p-2 border rounded mb-3">
+        <input type="email" name="email" placeholder="Email" class="w-full p-2 border rounded mb-3">
+        <input type="password" name="password" placeholder="Password" class="w-full p-2 border rounded mb-3">
+        <button type="submit" class="bg-green-600 text-white px-4 py-2 rounded w-full">Sign Up</button>
+        <p class="text-gray-600 mt-2 text-center">Already have an account? <a href="/auth/login" class="text-blue-500">Login</a></p>
+    </form>
+</div>
+<%- include('partials/footer') %>
